@@ -14,13 +14,13 @@ The ForgeRock/ServiceNow SAML 2.0 integration currently supports the following f
 ## Create IdP application on ForgeRock
 First, Create a Circle of Trust:<br/>
 1.) In the AM console go to `Realms` > `Realm Name` > `Applications` > `Federation` > `Circles of Trust` > Add Circle of Trust. <br/>
-2.) Create a Name(i.e."forgerocksso") for the Circle of Trust > Create<br/>
+2.) Create a Name(i.e."frservicenow") for the Circle of Trust > Create<br/>
 3.) `Entity Properties` > select at least one IDP and one SP<br/>
 <img src="./images/p1.png" />
 <br/>
 Next, Create a Hosted Entity Provider:<br/>
 `Applications` > `Federation` > `Entity Provider`> Add Entity Provider> Select "Hosted" from drop down<br/>
-4.) Enter an Entity ID<br/>
+4.) Enter an Entity ID(i.e."forgerocksso")<br/>
 5.) Verify the Entity Provider Base URL value is correct.<br/>
 6.) `Meta Aliases`> create a URL-friendly value in the Identity Provider Meta Alias and the Service Provider Meta Alias properties> Create<br/>
 <img src="./images/p2.png" />
